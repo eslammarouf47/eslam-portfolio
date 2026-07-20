@@ -58,14 +58,14 @@ const About = () => {
               About Me
             </motion.h2>
 
-            <motion.p
-              className="text-dark-text/80 leading-relaxed text-lg"
-              variants={itemVariants}
-            >
-              I&apos;m a passionate video editor and visual storyteller with expertise in cinematic video production. 
-              My work focuses on transforming raw footage into compelling visual narratives that captivate and 
-              inspire audiences through professional color grading and creative editing.
-            </motion.p>
+           <motion.p
+  className="text-dark-text/80 leading-relaxed text-lg"
+  variants={itemVariants}
+>
+  I am a passionate video editor and visual storyteller with expertise in cinematic video production.
+  My work focuses on transforming raw footage into compelling visual narratives that captivate and
+  inspire audiences through professional color grading and creative editing.
+</motion.p>
 
             <motion.p
               className="text-dark-text/80 leading-relaxed text-lg"
