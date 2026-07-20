@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { Linkedin, Mail, Youtube } from 'lucide-react'
 
 const About = () => {
   const containerVariants = {
@@ -61,26 +62,26 @@ const About = () => {
               className="text-dark-text/80 leading-relaxed text-lg"
               variants={itemVariants}
             >
-              I'm a passionate video editor and visual storyteller with a keen eye for
-              cinematic details. My work focuses on transforming raw footage into
-              compelling visual narratives that captivate and inspire audiences.
+              I'm a passionate video editor and visual storyteller with expertise in cinematic video production. 
+              My work focuses on transforming raw footage into compelling visual narratives that captivate and 
+              inspire audiences through professional color grading and creative editing.
             </motion.p>
 
             <motion.p
               className="text-dark-text/80 leading-relaxed text-lg"
               variants={itemVariants}
             >
-              With a background in creative direction and motion graphics, I specialize
-              in creating premium content that resonates with discerning audiences. Every
-              project is an opportunity to push creative boundaries and deliver excellence.
+              With a strong background in creative direction and motion graphics, I specialize in creating premium 
+              content that resonates with discerning audiences. Every project is an opportunity to push creative 
+              boundaries and deliver excellence in visual storytelling.
             </motion.p>
 
             <motion.div className="space-y-4 pt-4" variants={containerVariants}>
               {[
                 'Cinematography & Color Grading',
+                'Professional Video Editing',
                 'Motion Graphics & Animation',
                 'Creative Direction',
-                'Visual Storytelling',
               ].map((skill, index) => (
                 <motion.div
                   key={skill}
@@ -92,6 +93,35 @@ const About = () => {
                   <span className="text-dark-text/80">{skill}</span>
                 </motion.div>
               ))}
+            </motion.div>
+
+            {/* Social Links */}
+            <motion.div className="flex gap-4 pt-6" variants={itemVariants}>
+              <a
+                href="https://www.linkedin.com/in/eslam-maarouf-"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-dark-card hover:bg-white/10 rounded-lg transition-all group"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5 text-dark-text/60 group-hover:text-white transition-colors" />
+              </a>
+              <a
+                href="https://www.youtube.com/@eslammarouf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-dark-card hover:bg-white/10 rounded-lg transition-all group"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5 text-dark-text/60 group-hover:text-white transition-colors" />
+              </a>
+              <a
+                href="mailto:eslammarouf47@gmail.com"
+                className="p-3 bg-dark-card hover:bg-white/10 rounded-lg transition-all group"
+                aria-label="Email"
+              >
+                <Mail className="w-5 h-5 text-dark-text/60 group-hover:text-white transition-colors" />
+              </a>
             </motion.div>
           </motion.div>
         </motion.div>

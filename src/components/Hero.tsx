@@ -72,8 +72,8 @@ const Hero = () => {
             className="text-base md:text-lg text-dark-text/60 max-w-2xl mx-auto font-inter"
             variants={itemVariants}
           >
-            Crafting cinematic experiences through premium video editing and visual
-            storytelling. Transforming ideas into visual masterpieces.
+            Crafting cinematic experiences through premium video editing and visual storytelling. 
+            Transforming ideas into visual masterpieces with professional color grading and motion graphics.
           </motion.p>
 
           <motion.div

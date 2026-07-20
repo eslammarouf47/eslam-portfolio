@@ -6,19 +6,19 @@ const Skills = () => {
   const skillCategories = [
     {
       category: 'Video Editing',
-      skills: ['Premiere Pro', 'Final Cut Pro', 'DaVinci Resolve', 'Adobe After Effects'],
+      skills: ['Premiere Pro', 'Final Cut Pro', 'DaVinci Resolve', 'Adobe After Effects', 'Avid Media Composer'],
     },
     {
-      category: 'Graphics & Design',
-      skills: ['Photoshop', 'Illustrator', 'Figma', 'Cinema 4D'],
+      category: 'Color & Grading',
+      skills: ['Color Correction', 'Color Grading', 'LUT Application', 'Cinematic Workflows'],
     },
     {
-      category: 'Motion & Animation',
-      skills: ['After Effects', 'Motion Graphics', 'Keyframe Animation', 'VFX'],
+      category: 'Motion & Graphics',
+      skills: ['Motion Graphics', 'After Effects Animation', 'VFX', 'Keyframe Animation'],
     },
     {
       category: 'Production',
-      skills: ['Color Grading', 'Sound Design', 'Cinematography', 'Creative Direction'],
+      skills: ['Cinematography', 'Sound Design', 'Creative Direction', 'Content Strategy'],
     },
   ]
 

@@ -5,22 +5,22 @@ import { motion } from 'framer-motion'
 const Experience = () => {
   const experiences = [
     {
-      year: '2022 - Present',
-      title: 'Senior Video Editor',
-      company: 'Creative Studios Inc',
-      description: 'Leading video production team, overseeing cinematic content creation for premium brands.',
+      year: '2024 - Present',
+      title: 'Professional Video Editor & Content Creator',
+      company: 'Freelance',
+      description: 'Creating high-quality cinematic videos and visual content for diverse clients. Specializing in professional color grading, motion graphics, and creative storytelling.',
     },
     {
-      year: '2020 - 2022',
+      year: '2023 - 2024',
       title: 'Motion Graphics Designer',
-      company: 'Digital Agency Co',
-      description: 'Created compelling motion graphics and animated content for advertising campaigns.',
+      company: 'Digital Creative Agency',
+      description: 'Designed and produced compelling motion graphics and animated content for advertising campaigns and brand films.',
     },
     {
-      year: '2018 - 2020',
+      year: '2022 - 2023',
       title: 'Video Editor',
-      company: 'Production House',
-      description: 'Edited and color-graded documentary and commercial video content.',
+      company: 'Production Studio',
+      description: 'Edited and color-graded documentary, commercial, and social media video content for various brands.',
     },
   ]
 

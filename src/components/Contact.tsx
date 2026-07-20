@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Linkedin, Instagram, Twitter } from 'lucide-react'
+import { Mail, Linkedin, Instagram, Youtube } from 'lucide-react'
 import { useState, FormEvent } from 'react'
 
 const Contact = () => {
@@ -49,10 +49,10 @@ const Contact = () => {
   }
 
   const socials = [
-    { icon: Mail, href: 'mailto:hello@example.com', label: 'Email' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Mail, href: 'mailto:eslammarouf47@gmail.com', label: 'Email' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/eslam-maarouf-', label: 'LinkedIn' },
+    { icon: Youtube, href: 'https://www.youtube.com/@eslammarouf', label: 'YouTube' },
+    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
   ]
 
   return (
@@ -67,7 +67,7 @@ const Contact = () => {
         >
           <motion.div className="text-center space-y-4" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-bold font-grotesk">Let's Work Together</h2>
-            <p className="text-dark-text/60 text-lg">Have a project in mind? Get in touch and let's create something amazing.</p>
+            <p className="text-dark-text/60 text-lg">Have a video project in mind? Get in touch and let's create something amazing together.</p>
           </motion.div>
 
           <motion.form
@@ -87,7 +87,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="w-full bg-dark-card border border-white/10 rounded-lg px-4 py-3 text-dark-text placeholder-dark-text/40 focus:outline-none focus:border-white/30 transition-colors"
-                placeholder="John Doe"
+                placeholder="Your name"
               />
             </motion.div>
 
@@ -103,13 +103,13 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="w-full bg-dark-card border border-white/10 rounded-lg px-4 py-3 text-dark-text placeholder-dark-text/40 focus:outline-none focus:border-white/30 transition-colors"
-                placeholder="john@example.com"
+                placeholder="your@email.com"
               />
             </motion.div>
 
             <motion.div variants={itemVariants}>
               <label htmlFor="message" className="block text-sm font-inter mb-2">
-                Your Message
+                Project Details
               </label>
               <textarea
                 id="message"
@@ -119,7 +119,7 @@ const Contact = () => {
                 required
                 rows={5}
                 className="w-full bg-dark-card border border-white/10 rounded-lg px-4 py-3 text-dark-text placeholder-dark-text/40 focus:outline-none focus:border-white/30 transition-colors resize-none"
-                placeholder="Tell me about your project..."
+                placeholder="Tell me about your video project..."
               />
             </motion.div>
 
@@ -130,7 +130,7 @@ const Contact = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              {submitted ? '✓ Message Sent!' : 'Send Message'}
+              {submitted ? '✓ Message Sent!' : 'Send Project Inquiry'}
             </motion.button>
           </motion.form>
 
@@ -141,6 +141,8 @@ const Contact = () => {
                 <motion.a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-dark-text/60 hover:text-white transition-colors"
                   variants={itemVariants}
                   whileHover={{ y: -3 }}

@@ -1,13 +1,23 @@
-# Eslam Maarouf - Premium Portfolio Website
+# Eslam Maarouf - Premium Video Editing Portfolio
 
-A premium, production-ready portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
+A premium, production-ready portfolio website showcasing professional video editing, cinematography, and visual storytelling work. Built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
 
-## 🎬 Features
+## 🎬 About
+
+**Eslam Maarouf** is a professional video editor and visual storyteller specializing in:
+- Cinematic video production and editing
+- Color grading and color correction
+- Motion graphics and visual effects
+- Brand films and commercial content
+- Documentary and narrative filmmaking
+
+## 🎨 Features
 
 - **Next.js 15** with App Router and TypeScript
 - **Tailwind CSS** for responsive, utility-first styling
 - **Framer Motion** for smooth animations and transitions
 - **Dark Luxury Theme** - Minimal, cinematic, Apple-inspired design
+- **YouTube Integration** - Embedded video showcase
 - **Fully Responsive** - Mobile, tablet, and desktop optimized
 - **SEO Optimized** - Meta tags, OpenGraph, Twitter Card support
 - **Performance** - Optimized images, lazy loading, smooth scrolling
@@ -16,26 +26,21 @@ A premium, production-ready portfolio website built with Next.js 15, TypeScript,
 ## 📁 Project Structure
 
 ```
-.
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx          # Root layout with fonts and metadata
-│   │   ├── page.tsx            # Home page
-│   │   └── globals.css         # Global styles and animations
-│   ├── components/
-│   │   ├── Navbar.tsx          # Navigation component
-│   │   ├── Hero.tsx            # Hero section with video background
-│   │   ├── About.tsx           # About section with profile
-│   │   ├── Featured.tsx        # Featured projects portfolio
-│   │   ├── Experience.tsx      # Experience timeline
-│   │   ├── Skills.tsx          # Skills and expertise
-│   │   ├── Contact.tsx         # Contact form
-│   │   └── Footer.tsx          # Footer
-├── public/                      # Static assets
-├── tailwind.config.ts          # Tailwind configuration
-├── tsconfig.json               # TypeScript configuration
-├── next.config.js              # Next.js configuration
-└── package.json                # Dependencies
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with fonts and metadata
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles and animations
+├── components/
+│   ├── Navbar.tsx          # Navigation component
+│   ├── Hero.tsx            # Hero section with video background
+│   ├── About.tsx           # About section with profile
+│   ├── Featured.tsx        # Featured projects with YouTube videos
+│   ├── Experience.tsx      # Experience timeline
+│   ├── Skills.tsx          # Skills and expertise
+│   ├── Contact.tsx         # Contact form
+│   └── Footer.tsx          # Footer
+public/                      # Static assets
 ```
 
 ## 🚀 Getting Started
@@ -65,6 +70,15 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## 🎥 Featured Videos
+
+1. **Cinematic Showreel** - Professional video editing compilation
+2. **Creative Motion Design** - Motion graphics and visual effects
+3. **Brand Film Production** - Professional brand storytelling
+4. **Documentary Style** - Cinematic narrative filmmaking
+
+[View more on YouTube](https://www.youtube.com/@eslammarouf)
+
 ## 🎨 Customization
 
 ### Theme Colors
@@ -79,35 +93,32 @@ colors: {
 }
 ```
 
-### Fonts
+### Update Videos
 
-The project uses:
-- **Space Grotesk** - Headlines and bold text
-- **Inter** - Body text and descriptions
-
-Customize in `src/app/layout.tsx`
-
-### Content
-
-Update content in individual component files:
-- Hero content: `src/components/Hero.tsx`
-- About section: `src/components/About.tsx`
-- Projects: `src/components/Featured.tsx`
-- Experience: `src/components/Experience.tsx`
-- Skills: `src/components/Skills.tsx`
-- Contact: `src/components/Contact.tsx`
-
-### Videos and Images
-
-Replace placeholder URLs with your own:
+In `src/components/Featured.tsx`, update the `projects` array with your YouTube video IDs:
 
 ```typescript
-// In components
-src="https://your-video-url.mp4"
-image="https://your-image-url.jpg"
+const projects = [
+  {
+    title: 'Your Video Title',
+    category: 'Category',
+    description: 'Video description',
+    image: 'https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg',
+    video: 'https://youtu.be/VIDEO_ID',
+    youtubeId: 'VIDEO_ID',
+  },
+]
 ```
 
-## 🔧 Building for Production
+### Update Content
+
+- **Hero**: `src/components/Hero.tsx`
+- **About**: `src/components/About.tsx`
+- **Experience**: `src/components/Experience.tsx`
+- **Skills**: `src/components/Skills.tsx`
+- **Contact**: `src/components/Contact.tsx`
+
+## 🔨 Building for Production
 
 1. Build the project:
 ```bash
@@ -139,7 +150,7 @@ The project can be deployed to any platform that supports Next.js:
 
 ## 📱 Responsive Design
 
-The portfolio is fully responsive with breakpoints:
+Fully responsive with breakpoints:
 - Mobile: 320px and up
 - Tablet: 768px and up (md)
 - Desktop: 1024px and up (lg)
@@ -180,17 +191,15 @@ The site features:
 - Sitemap ready
 - Robots.txt configuration
 
-## 🤝 Contributing
+## 🔗 Links
 
-Feel free to fork, modify, and use this template for your own portfolio.
+- **LinkedIn**: [linkedin.com/in/eslam-maarouf-](https://www.linkedin.com/in/eslam-maarouf-)
+- **YouTube**: [@eslammarouf](https://www.youtube.com/@eslammarouf)
+- **Email**: eslammarouf47@gmail.com
 
 ## 📄 License
 
 This project is open source and available under the MIT License.
-
-## 📞 Support
-
-For questions or issues, please reach out or create an issue in the repository.
 
 ---
 
