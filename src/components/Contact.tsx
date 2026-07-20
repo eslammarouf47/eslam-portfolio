@@ -66,8 +66,8 @@ const Contact = () => {
           className="space-y-12"
         >
           <motion.div className="text-center space-y-4" variants={itemVariants}>
-            <h2 className="text-4xl md:text-5xl font-bold font-grotesk">Let's Work Together</h2>
-            <p className="text-dark-text/60 text-lg">Have a video project in mind? Get in touch and let's create something amazing together.</p>
+            <h2 className="text-4xl md:text-5xl font-bold font-grotesk">Let&apos;s Work Together</h2>
+            <p className="text-dark-text/60 text-lg">Have a video project in mind? Get in touch and let&apos;s create something amazing together.</p>
           </motion.div>
 
           <motion.form
