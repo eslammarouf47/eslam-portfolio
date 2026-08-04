@@ -65,7 +65,7 @@ const Experience = () => {
             <div className="hidden md:block absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-white/20 via-white/10 to-transparent" />
 
             <motion.div className="space-y-8" variants={containerVariants}>
-              {experiences.map((exp, index) => (
+              {experiences.map((exp) => (
                 <motion.div key={exp.title} className="md:pl-24 relative" variants={itemVariants}>
                   {/* Timeline dot */}
                   <div className="hidden md:block absolute left-2 top-2 w-12 h-12 bg-dark-card border-2 border-white/30 rounded-full flex items-center justify-center">
